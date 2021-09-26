@@ -1,0 +1,41 @@
+type Query {
+    customers: [Customer]
+}
+
+type Mutation {
+    customer(customerInput: CustomerInput): Customer
+}
+
+type Customer {
+    customerNumber: String!
+    name: String!
+    gender: String!
+    contact: Int!
+    mail: String
+    accounts: [Account]
+}
+
+type Account {
+    accountId: String
+    accountNumber: Int
+    accountStatus: AccountStatus
+    accountBalance: Float
+}
+
+input CustomerInput {
+    name: String!
+    gender: String!
+    contact: Int!
+    mail: String
+    accounts: [AccountInput]
+}
+
+input AccountInput {
+    accountNumber: Int
+    accountStatus: AccountStatus
+    accountBalance: Float
+}
+
+enum AccountStatus {
+    Active, Inactive, Closed
+}
