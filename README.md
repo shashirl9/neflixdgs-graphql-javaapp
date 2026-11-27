@@ -1,5 +1,5 @@
 # neflixdgs-graphql-javaapp
-Start GraphQL with Netflix DGS framework and Spring Boot
+.Start GraphQL with Netflix DGS framework and Spring Boot
 
 ![img_4.png](img_4.png)
 
